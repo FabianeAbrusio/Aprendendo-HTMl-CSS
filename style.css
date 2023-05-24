@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #c391d6;
+}
+.titulo-destaque {
+    color: rgb(138, 75, 143);
+}
+
+.apresentacao{
+   /* margin: 10%; */
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left:10% ;
+    margin-right:10% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 1.90rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__link{
+   /* background-color: #22D4FD; */
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   border: 2px solid #f922fd;
+   width: 50%;
+   text-align: center;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 20px 0;
+   text-decoration: none;
+   color: #9e67d1;
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+.apresentacao__links__link:hover{
+    background-color: #9192d6;
+
+}
+
+.apresentacao_links_subtitulo{
+    font-family:'Krona One', sans-serif;
+    font-weight: 380;
+    font-size: 1.5rem;  
+}
+
+.rodape{
+    padding: 24px;
+    color:#000000;
+    background-color: #9e67d1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 16% ;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 50px;
+}
+
+
+.cabecalho__menu__link{
+    color:#9e67d1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
